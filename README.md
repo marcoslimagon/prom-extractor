@@ -4,6 +4,8 @@ A simple python-based script that exports a list of queries into txt and zip
 ## How it works
 Given a list of metrics, it will execute the query against `prometheus` server, save in the output folder.
 
+It uses the [query_range endpoint](https://github.com/marcoslimagon/prom-extractor)
+
 This can be used to export for other sources
 
 
