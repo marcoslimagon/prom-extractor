@@ -1,0 +1,8 @@
+prometheus_endpoint: "http://localhost:9090/api/v1/query_range"
+evaluation_timeout: "10s"  # Example timeout value, adjust as needed
+metrics:
+  - name: up
+    query: "up{}"
+  - name: http_requests_total
+    query: "sum(rate(prometheus_http_request_duration_seconds_bucket{}[1m]))"
+output_folder: "output"
